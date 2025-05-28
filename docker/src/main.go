@@ -83,7 +83,7 @@ func init() {
     		email VARCHAR(100) PRIMARY KEY
 		);`)
 
-	t = template.Must(template.ParseFiles("./index.templ"))
+	t = template.Must(template.ParseFiles("./index.html"))
 
 	mux = http.NewServeMux()
 	mux.HandleFunc("GET /", getHandler)
