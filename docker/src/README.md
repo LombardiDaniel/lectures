@@ -1,6 +1,6 @@
 # Docker & Linux Containers
 
-Daniel Lombardi 2025-05-27
+Daniel Lombardi | 2025-05-28 | [slides](/docker/keynote.pdf)
 
 Check out [patos.dev](https://patos.dev)!
 
@@ -59,3 +59,14 @@ other docker hosts.
 
 The `docker run` command executes the `CMD` clause in the Dockerfile inside the specified
 image, creating a running container.
+
+## Hands-On
+
+Docker Hello World
+
+```sh
+curl -fsSL https://get.docker.com/ | sh && sudo usermod -aG docker $USER
+docker run -ti debian /bin/bash
+```
+
+Check out [src/docker-compose.yml](/docker/src/docker-compose.yml).
