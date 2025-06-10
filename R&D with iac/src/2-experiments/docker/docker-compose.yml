@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  clickhouse:
+    image: clickhouse/clickhouse-server:25.1.2.3
+    # user: "101:101"
+    restart: always
+    volumes:
+      - ./clickhouse.xml:/etc/clickhouse-server/config.d/config.xml
+      # - ./users.xml:/etc/clickhouse-server/users.d/users.xml
+      - /mnt/clickhouse_disk:/var/lib/clickhouse
+    env_file:
+      - .env
+    environment:
+      - S3_BUCKET=https://br-se1.magaluobjects.com/BUCKET_NAME_SED_FLAG
+    ports:
+      - 8123:8123
+    expose:
+      - 8123
+
+  # tester:
+  #   build:
+  #     context: ./src
+  #     dockerfile: Dockerfile
