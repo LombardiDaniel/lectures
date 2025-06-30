@@ -17,8 +17,7 @@ variable "vpc_id" {
 }
 
 variable "project_name" {
-  type    = string
-  default = "test"
+  type = string
 }
 
 variable "tcp_ports" {
