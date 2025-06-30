@@ -4,11 +4,13 @@ Daniel Lombardi | 2025-06-09 | [slides](/R&D%20with%20iac/keynote.pdf)
 
 Check out [patos.dev](https://patos.dev)!
 
+## Resources
+
 https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
 
 https://developer.hashicorp.com/terraform/tutorials
 
-https://https://docs.magalu.cloud/docs/devops-tools/cli-mgc/how-to/download-and-install/
+https://docs.magalu.cloud/docs/devops-tools/cli-mgc/how-to/download-and-install/
 
 ## Intro
 
