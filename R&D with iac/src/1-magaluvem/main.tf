@@ -1,5 +1,5 @@
 provider "mgc" {
-  region  = "br-se1"
+  region  = "br-ne1"
   api_key = var.api_key
 }
 
